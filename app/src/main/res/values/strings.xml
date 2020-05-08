@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">VI BE Recorder</string>
+    <string name="copyRight">Copyright © 2018 IV-IT (Group-IV). All rights reserved.
+                    Powered by Team Pokemon.</string>
+
+    <string-array name="Time">
+        <item>Period</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="Subject">
+        <item>Subject</item>
+        <item>Java</item>
+        <item>Android</item>
+        <item>C#</item>
+        <item>Python</item>
+    </string-array>
+</resources>

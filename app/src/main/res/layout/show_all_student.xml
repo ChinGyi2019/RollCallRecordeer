@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/topName"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="#fff"
+            android:padding="5dp"
+            android:text="Roll"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/background_dark"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:textColor="@android:color/background_dark"
+            android:layout_toRightOf="@+id/topName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="25dp"
+            android:layout_weight="4"
+            android:textAlignment="textStart"
+            android:textStyle="bold"
+            android:background="#fff"
+            android:padding="5dp"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_below="@id/description"
+        android:id="@+id/showAllStudentList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:clickable="true"
+        android:src="@drawable/ic_add_red_24dp"/>
+
+
+</RelativeLayout>

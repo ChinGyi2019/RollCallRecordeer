@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme">
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/add_rollcall_app_bar"></include>
+
+    <LinearLayout
+        android:layout_below="@id/add_rollcall_app_bar"
+        android:id="@+id/requestInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:weightSum="3"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/dateView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:padding="5dp">
+
+            <EditText
+                android:id="@+id/inputDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter Date"
+                android:clickable="true"
+                android:editable="false"
+                android:cursorVisible="false"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/timeView"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:padding="5dp">
+
+            <Spinner
+                android:id="@+id/inputTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/Time"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/subView"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:padding="5dp">
+
+            <Spinner
+                android:id="@+id/inputSubject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/attendanceList"
+        android:layout_below="@id/requestInfo"
+        android:layout_above="@+id/dateSubmitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/dateSubmitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_background_color"
+        android:text="Submit"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

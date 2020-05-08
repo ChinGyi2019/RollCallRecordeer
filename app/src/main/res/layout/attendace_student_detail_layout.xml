@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:theme="@style/AppTheme">
+
+    <TextView
+        android:id="@+id/attendanceRoll"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:maxWidth="25dp"
+        android:padding="5dp"
+        android:text="1"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/attendanceName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/attendanceCheck"
+        android:layout_toRightOf="@+id/attendanceRoll"
+        android:layout_weight="3"
+        android:maxWidth="100dp"
+        android:padding="5dp"
+        android:text="1"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+    <CheckBox
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:id="@+id/attendanceCheck"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:maxWidth="25dp"
+        android:padding="5dp"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="7dp"
+    android:layout_margin="7dp">
+
+    <TextView
+        android:id="@+id/rcRoll"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="4be-11"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/rcName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/rcCount"
+        android:layout_toRightOf="@+id/rcRoll"
+        android:text="Soe Min Htet"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/rcCount"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/rcPercent"
+        android:text="50"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/rcPercent"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="75%"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+</RelativeLayout>
