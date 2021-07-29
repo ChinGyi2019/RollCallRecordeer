@@ -1,7 +1,7 @@
 # Role Call Recorder App
 <h2>Role Call Recorder App</h2>
 
-<p>It's one of my student projects in recent years ago. The purpose's to easily record student's role call. It' ll digitalize our role call record for the teachers. Thanks to my Contribute Developer in ths project.</p>
+<p>It's one of my student projects in recent years ago. The purpose's to easily record student's role call. It' ll digitalize our role call record for the teachers. Special thanks to my Contribute Developer in ths project.</p>
 
 <p> <img name = "Home Screen I" src="https://github.com/ChinGyi2019/MovieApp--Android-CleanArchitecture-/blob/main/dummy/recorder/11.jpg" width="200" height="400" />
   
